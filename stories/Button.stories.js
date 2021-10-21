@@ -20,7 +20,9 @@ export default {
 const Template = ({ label, ...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
-  return createButton({ label, ...args });
+  return `<button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+  Button text fart fart
+</button>`
 };
 
 export const Primary = Template.bind({});
